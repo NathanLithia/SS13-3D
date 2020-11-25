@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Maps/DebugStation.unity
+    guid: 3b6647150a3174c48b3eb3fe052c99da
   m_configObjects: {}
