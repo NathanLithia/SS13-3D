@@ -92,48 +92,6 @@ MonoBehaviour:
     m_Value: 2
     min: 1
     max: 6
---- !u!114 &-6710450313646920686
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 31394aa05878563408489d5c1688f3a0, type: 3}
-  m_Name: PathTracing
-  m_EditorClassIdentifier: 
-  active: 1
-  m_AdvancedMode: 0
-  enable:
-    m_OverrideState: 0
-    m_Value: 0
-  layerMask:
-    m_OverrideState: 0
-    m_Value:
-      serializedVersion: 2
-      m_Bits: 4294967295
-  maximumSamples:
-    m_OverrideState: 0
-    m_Value: 256
-    min: 1
-    max: 4096
-  minimumDepth:
-    m_OverrideState: 0
-    m_Value: 1
-    min: 1
-    max: 10
-  maximumDepth:
-    m_OverrideState: 0
-    m_Value: 4
-    min: 1
-    max: 10
-  maximumIntensity:
-    m_OverrideState: 0
-    m_Value: 10
-    min: 0
-    max: 100
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +108,7 @@ MonoBehaviour:
   - {fileID: 6425269759518895860}
   - {fileID: -6727339498312541381}
   - {fileID: 3505273746019313416}
+  - {fileID: 8485124526263518765}
 --- !u!114 &3505273746019313416
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -175,25 +134,25 @@ MonoBehaviour:
     m_Value: 0
   minSmoothness:
     m_OverrideState: 1
-    m_Value: 0.583
+    m_Value: 0.1
     min: 0
     max: 1
   smoothnessFadeStart:
-    m_OverrideState: 0
-    m_Value: 0.906
+    m_OverrideState: 1
+    m_Value: 0.1
     min: 0
     max: 1
   reflectSky:
     m_OverrideState: 1
-    m_Value: 0
+    m_Value: 1
   depthBufferThickness:
-    m_OverrideState: 1
-    m_Value: 0.725
+    m_OverrideState: 0
+    m_Value: 1
     min: 0
     max: 1
   screenFadeDistance:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.64
     min: 0
     max: 1
   layerMask:
@@ -239,8 +198,8 @@ MonoBehaviour:
     min: 1
     max: 31
   m_RayMaxIterations:
-    m_OverrideState: 0
-    m_Value: 32
+    m_OverrideState: 1
+    m_Value: 128
 --- !u!114 &6425269759518895860
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -264,19 +223,19 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 0
   exposure:
-    m_OverrideState: 0
-    m_Value: 0
+    m_OverrideState: 1
+    m_Value: -2
   multiplier:
     m_OverrideState: 0
     m_Value: 1
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 0.003557975
+    m_Value: 0.0014133472
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.48438936, y: 0.49072993, z: 0.5}
+    m_Value: {x: 0.48759735, y: 0.5, z: 0.47410974}
   desiredLuxValue:
     m_OverrideState: 0
     m_Value: 20000
@@ -292,7 +251,7 @@ MonoBehaviour:
     m_Value: 0
   hdriSky:
     m_OverrideState: 1
-    m_Value: {fileID: 8900000, guid: cafa59441a4e4414a88c4c8bd8575448, type: 3}
+    m_Value: {fileID: 8900000, guid: 612498faa3373464db71a162c9c1805c, type: 3}
   enableBackplate:
     m_OverrideState: 0
     m_Value: 0
@@ -342,3 +301,56 @@ MonoBehaviour:
   rectLightShadow:
     m_OverrideState: 0
     m_Value: 0
+--- !u!114 &8485124526263518765
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f077503be6ae942a1e1245dbd53ea9, type: 3}
+  m_Name: Bloom
+  m_EditorClassIdentifier: 
+  active: 1
+  m_AdvancedMode: 0
+  quality:
+    m_OverrideState: 0
+    m_Value: 1
+  threshold:
+    m_OverrideState: 1
+    m_Value: 1
+    min: 0
+  intensity:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  scatter:
+    m_OverrideState: 0
+    m_Value: 1
+    min: 0
+    max: 1
+  tint:
+    m_OverrideState: 1
+    m_Value: {r: 0.9427508, g: 1, b: 0, a: 1}
+    hdr: 0
+    showAlpha: 0
+    showEyeDropper: 1
+  dirtTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 2800000, guid: 6e4d82a28f4625c45a08f72ba7c3a4bb, type: 3}
+  dirtIntensity:
+    m_OverrideState: 1
+    m_Value: 5
+    min: 0
+  anamorphic:
+    m_OverrideState: 0
+    m_Value: 1
+  m_Resolution:
+    m_OverrideState: 0
+    m_Value: 2
+  m_HighQualityFiltering:
+    m_OverrideState: 0
+    m_Value: 1

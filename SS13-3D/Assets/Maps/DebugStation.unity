@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1112636378}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.0009644225, g: 0.000979942, b: 0.0009967128, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14833,7 +14833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 441482e8936e35048a1dffac814e3ef8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Profile: {fileID: 11400000, guid: 5994c7449fff2b14c883f4746b575468, type: 2}
+  m_Profile: {fileID: 11400000, guid: e0724aae4185fa442bf619ef1c0c235d, type: 2}
   m_StaticLightingSkyUniqueID: 0
 --- !u!4 &590649105
 Transform:
@@ -18605,7 +18605,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &734644454
 Transform:
@@ -18615,7 +18615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734644453}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.7744515, y: -0.8427516, z: -0.39709076}
+  m_LocalPosition: {x: 0.7744515, y: 0.468, z: -0.876}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49774,8 +49774,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 0, g: 1, b: 0.16476631, a: 1}
-  m_Intensity: 0.7957747
-  m_Range: 11.58
+  m_Intensity: 0.22361268
+  m_Range: 5.69
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -49821,7 +49821,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 11.58}
   m_UseBoundingSphereOverride: 0
-  m_ShadowRadius: 14.82
+  m_ShadowRadius: 0
   m_ShadowAngle: 0
 --- !u!4 &1921171327
 Transform:
@@ -49831,7 +49831,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1921171325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.3817, y: 1.2232, z: 4.4126}
+  m_LocalPosition: {x: -3.517, y: 1.936, z: 4.583}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -49857,7 +49857,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 10
+  m_Intensity: 2.81
   m_EnableSpotReflector: 0
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -49871,7 +49871,7 @@ MonoBehaviour:
   m_ShapeWidth: 4.73
   m_ShapeHeight: 1.28
   m_AspectRatio: 1
-  m_ShapeRadius: 14.82
+  m_ShapeRadius: 0
   m_SoftnessScale: 1
   m_UseCustomSpotLightShadowCone: 0
   m_CustomSpotLightShadowCone: 30
@@ -49903,7 +49903,7 @@ MonoBehaviour:
   m_EvsmBlurPasses: 0
   m_LightlayersMask: 1
   m_LinkShadowLayers: 1
-  m_ShadowNearPlane: 0.0001
+  m_ShadowNearPlane: 0.15
   m_BlockerSampleCount: 24
   m_FilterSampleCount: 16
   m_MinFilterSize: 0.1
