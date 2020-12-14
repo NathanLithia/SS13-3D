@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1112636378}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.00008578605, g: 0.000084774634, b: 0.000089004, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22144,6 +22144,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3453056427262026348, guid: 4da43b193a9a09a4fba6d30b0a3bc6a5, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: -2432090755550338912, guid: 954035d8f6a496c43af08077dd68ed52, type: 3}
     - target: {fileID: 8758015442954029085, guid: 4da43b193a9a09a4fba6d30b0a3bc6a5, type: 3}
       propertyPath: m_Name
       value: Wall (47)
