@@ -59,7 +59,9 @@ MonoBehaviour:
   _data:
     _json: '{"declarations":{"collection":{"$content":[{"name":"Movement Speed","value":{"$content":1.5,"$type":"System.Single"},"$version":"A"},{"name":"Rotation
       Clamp","value":{"$content":90.0,"$type":"System.Single"},"$version":"A"},{"name":"Jump
-      Height","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      Height","value":{"$content":0.3,"$type":"System.Single"},"$version":"A"},{"name":"Mouse
+      Sensitivity X","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"},{"name":"Mouse
+      Sensitivity Y","value":{"$content":2.0,"$type":"System.Single"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences: []
 --- !u!114 &2849587067201366124
 MonoBehaviour:
