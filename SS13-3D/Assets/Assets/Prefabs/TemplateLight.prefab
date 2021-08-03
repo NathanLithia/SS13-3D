@@ -16,7 +16,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &933035971360540307
 Transform:
@@ -91,7 +91,7 @@ Light:
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 0
+  m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 2
   m_ShadowAngle: 0
 --- !u!114 &6759037419090773580
@@ -189,7 +189,7 @@ MonoBehaviour:
   m_PenumbraTint: 0
   m_NormalBias: 0.75
   m_SlopeBias: 0.5
-  m_ShadowUpdateMode: 2
+  m_ShadowUpdateMode: 0
   m_AlwaysDrawDynamicShadows: 0
   m_UpdateShadowOnLightMovement: 1
   m_CachedShadowTranslationThreshold: 0.01
@@ -216,6 +216,19 @@ MonoBehaviour:
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
   m_AreaLightEmissiveMeshLayer: -1
+--- !u!65 &9003577058732686346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279030860630831598}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.124218754, y: 0.124218754, z: 0.6625}
+  m_Center: {x: 0.062109377, y: -0.062109377, z: 0}
 --- !u!1 &3676081652261648739
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,13 +238,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7463413846267880511}
-  - component: {fileID: 8282866156014214758}
   m_Layer: 0
   m_Name: TemplateLight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &7463413846267880511
 Transform:
@@ -249,19 +261,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &8282866156014214758
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3676081652261648739}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &6687237418772329574
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -329,6 +328,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lamp Model
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 48379abf9afa6e7498ca47ab9348b442, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 1151388028547126963, guid: 48379abf9afa6e7498ca47ab9348b442, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -339,12 +342,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8164078558771037576, guid: 48379abf9afa6e7498ca47ab9348b442, type: 3}
       propertyPath: m_StaticEditorFlags
-      value: 0
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48379abf9afa6e7498ca47ab9348b442, type: 3}
 --- !u!4 &6577347264017240973 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 48379abf9afa6e7498ca47ab9348b442, type: 3}
+  m_PrefabInstance: {fileID: 6687237418772329574}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &3279030860630831598 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 48379abf9afa6e7498ca47ab9348b442, type: 3}
   m_PrefabInstance: {fileID: 6687237418772329574}
   m_PrefabAsset: {fileID: 0}
